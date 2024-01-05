@@ -121,8 +121,6 @@
 &kp LCTRL  &kp Z  &kp X      &kp C      &kp V  &kp B    &kp N    &kp M  &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &kp ENTER
                          &ltq 1 BACKSPACE    &ltq 3 TAB        &ltq 2 SPACE  &ltq 2 SPACE &ltq 3 ENTER
             >;
-
-            trackball-bindings = <&tmv_coarse>;
         };
 
         Lower {
