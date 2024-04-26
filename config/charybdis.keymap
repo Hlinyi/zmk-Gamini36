@@ -120,9 +120,9 @@
         Base {
             label = "Base";
             bindings = <
-&kp Q                    &kp W           &kp E        &kp R         &kp T      &kp Y  &kp U  &kp I         &kp O    &kp P
-&kp A                    &kp S           &kp D        &kp F         &kp G      &kp H  &kp J  &kp K         &kp L    &kp SEMI
-&kp Z                    &kp X           &kp C        &kp V         &kp B      &kp N  &kp M  &kp COMMA     &kp DOT  &kp FSLH
+&none &kp Q                    &kp W           &kp E        &kp R         &kp T      &kp Y  &kp U  &kp I         &kp O    &kp P    &none
+&none &kp A                    &kp S           &kp D        &kp F         &kp G      &kp H  &kp J  &kp K         &kp L    &kp SEMI &none
+&none &kp Z                    &kp X           &kp C        &kp V         &kp B      &kp N  &kp M  &kp COMMA     &kp DOT  &kp FSLH &none
 &mt LEFT_ALT LEFT_SHIFT  &mt LCTRL CAPS  &ltq 1 BSPC  &ltq 2 ENTER  &lt 3 TAB                &ltq 2 SPACE  &kp ESC  &to 5
             >;
         };
@@ -130,9 +130,9 @@
         Lower {
             label = "Lower";
             bindings = <
-&kp LG(D)  &kp LA(A)  &kp UP     &kp DELETE  &trans     &trans     &kp N7  &kp N8  &kp N9      &trans
-&kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT   &macro1    &kp EQUAL  &kp N4  &kp N5  &kp N6      &kp N0
-&kp LC(Z)  &kp LC(X)  &kp RC(C)  &kp LC(V)   &kp LG(V)  &kp MINUS  &kp N1  &kp N2  &kp N3      &kp KP_DOT
+&none &kp LG(D)  &kp LA(A)  &kp UP     &kp DELETE  &trans     &trans     &kp N7  &kp N8  &kp N9      &trans &none
+&none &kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT   &macro1    &kp EQUAL  &kp N4  &kp N5  &kp N6      &kp N0 &none
+&none &kp LC(Z)  &kp LC(X)  &kp RC(C)  &kp LC(V)   &kp LG(V)  &kp MINUS  &kp N1  &kp N2  &kp N3      &kp KP_DOT &none
 &trans     &trans     &trans     &trans      &trans                        &kp N0  &kp KP_DOT  &trans
             >;
         };
@@ -140,9 +140,9 @@
         Raise {
             label = "Raise";
             bindings = <
-&trans      &kp N7  &kp N8  &kp N9  &trans          &kp QUESTION       &kp AMPS  &kp ASTERISK  &kp LPAR   &none
-&kp N0      &kp N4  &kp N5  &kp N6  &none           &kp COLON          &kp DLLR  &kp PRCNT     &kp CARET  &kp RPAR
-&kp KP_DOT  &kp N1  &kp N2  &kp N3  &kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp EXCL  &kp AT        &kp HASH   &none
+&none &trans      &kp N7  &kp N8  &kp N9  &trans          &kp QUESTION       &kp AMPS  &kp ASTERISK  &kp LPAR   &none &none
+&none &kp N0      &kp N4  &kp N5  &kp N6  &none           &kp COLON          &kp DLLR  &kp PRCNT     &kp CARET  &kp RPAR &none
+&none &kp KP_DOT  &kp N1  &kp N2  &kp N3  &kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp EXCL  &kp AT        &kp HASH   &none &none
 &trans      &trans  &trans  &trans  &trans                                       &trans        &trans     &trans
             >;
         };
@@ -150,9 +150,9 @@
         Shortcut {
             label = "shortcut";
             bindings = <
-&none   &none       &kp C_VOL_UP  &none       &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none   &kp C_PREV  &kp C_PP      &kp C_NEXT  &none   &bt BT_CLR    &none         &none         &none         &none
-&none   &none       &kp C_VOL_DN  &trans      &none   &none         &none         &none         &none         &none
+&none &none   &none       &kp C_VOL_UP  &none       &none   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &none
+&none &none   &kp C_PREV  &kp C_PP      &kp C_NEXT  &none   &bt BT_CLR    &none         &none         &none         &none &none
+&none &none   &none       &kp C_VOL_DN  &trans      &none   &none         &none         &none         &none         &none &none
 &trans  &trans      &trans        &trans      &trans                              &trans        &trans        &trans
             >;
         };
@@ -160,18 +160,18 @@
         Game {
             label = "Game";
             bindings = <
-&none   &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none
+&none   &trans  &trans  &trans  &to 0   &trans  &trans  &trans  &trans  &trans &none
+&none &trans  &trans  &trans  &trans  &trans  &none   &none   &none   &none   &none &none
+&none &none   &none   &none   &none   &none   &none   &none   &none   &none   &none &none
 &none   &none   &none   &none   &none                   &none   &none   &none
             >;
         };
 
         Mouse {
             bindings = <
-&trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none   &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans
+&none &trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans &none
+&none &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none   &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans &none
+&none &trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans &none
 &trans  &trans     &trans     &trans     &trans                     &trans     &trans     &to 0
             >;
         };
