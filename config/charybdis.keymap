@@ -126,7 +126,7 @@
             label = "Lower";
             bindings = <
 &none  &kp LG(D)  &kp LA(A)  &kp UP     &kp DELETE  &trans     &trans     &kp N7  &kp N8  &kp N9      &trans      &none
-&none  &kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT   &macro1    &kp EQUAL  &kp N4  &kp N5  &kp N6      &kp N0      &none
+&none  &kp LC(A)  &kp LEFT   &kp DOWN   &kp RIGHT   &kp B      &kp EQUAL  &kp N4  &kp N5  &kp N6      &kp N0      &none
 &none  &kp LC(Z)  &kp LC(X)  &kp RC(C)  &kp LC(V)   &kp LG(V)  &kp MINUS  &kp N1  &kp N2  &kp N3      &kp KP_DOT  &none
        &trans     &trans     &trans     &trans      &trans                        &kp N0  &kp KP_DOT  &trans
             >;
