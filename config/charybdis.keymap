@@ -166,7 +166,7 @@
             bindings = <
 &none  &trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans  &none
 &none  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &none   &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &none
-&none  &trans  &trans     &trans     &trans     &trans  &trans  &trans     &trans     &trans     &trans  &none
+&none  &trans  &trans     &trans     &trans     &trans  &msc SCRL_UP  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT     &trans  &none
        &trans  &trans     &trans     &trans     &trans                     &trans     &trans     &to 0
             >;
         };
